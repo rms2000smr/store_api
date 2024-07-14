@@ -8,3 +8,6 @@ class BaseException(Exception):
 
 class NotFoundException(BaseException):
     message = "Not Found"
+
+class DuplicateEntryException(BaseException):
+    message = "An entry with the same key(s) already exists"
